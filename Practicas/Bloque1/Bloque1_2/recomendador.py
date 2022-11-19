@@ -1,3 +1,18 @@
+# Catalina Royo-Villanova Seguí
+# 202104665
+
+'''
+Practica 2.
+Hacer un recomendador de uno de los topics que elijáis, películas, música, series...
+(Extraer dataset de www.kaggle.com) Para ello tendréis que elegir un dataset en formato
+csv y montar este proceso a través de una ETL que os extraiga la información del csv elegido
+y mediante el uso de expresiones regulares os devuelva al menos por pantalla la recomendación
+propuesta sobre un input dado.
+
+Opcional:
+Esta ETL será desplegada a traves de un orquestador como puede ser Dagster o Airflow.
+'''
+
 import pandas as pd
 import re
 import random

@@ -1,9 +1,22 @@
 # Catalina Royo-Villanova Seguí
 # 202104665
 
-'''YO: Bug hunter
+'''
+Practica 1.
+Hacer un buscador de leaks en commits de github, para ello hay que usar pandas
+y expresiones regulares además del arquetipo que hemos trabajado en clase.
+
+Opcional:
+Montarlo todo en una imagen docker y hacer una barra de progreso para ver que
+esta haciendo nuestra ETL.
+'''
+
+
+'''
+YO: Bug hunter
 QUIERO: Crear un proceso ETL
-PARA: Encontrar leaks en commits'''
+PARA: Encontrar leaks en commits
+'''
 
 from git import Repo
 import pandas as pd
