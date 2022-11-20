@@ -2,7 +2,9 @@
 # 202104665
 
 '''
+Bloque 1.
 Practica 2.
+
 Hacer un recomendador de uno de los topics que elijáis, películas, música, series...
 (Extraer dataset de www.kaggle.com) Para ello tendréis que elegir un dataset en formato
 csv y montar este proceso a través de una ETL que os extraiga la información del csv elegido
