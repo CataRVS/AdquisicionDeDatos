@@ -1,5 +1,6 @@
 # Adquisicion De Datos
 ## Contenido
+La carpeta de Practicas contiene:
 - Bloque 1: Extracción y transformación de datos
 - Bloque 2: Limpieza y calidad de los datos
 - Bloque 3: Ingesta de ficheros de datos estructurados y no estructurados
