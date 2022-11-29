@@ -42,7 +42,7 @@ Dirección de github con al menos el siguiente contenido.
 ## Ejecución del fichero
 #### Descargarse el dataset
 Lo podemos hacer de dos manera:
-- Descargarlo desde su link de kaggle: https://www.kaggle.com/datasets/harshitshankhdhar/netflix-and-amazon-prime-tv-series-dataset
+- Descargarlo desde su link de kaggle: https://www.kaggle.com/datasets/neethimohan/maven-pizza-challenge-dataset?select=data_dictionary.csv
 - Descargarlo desde este repositorio
 #### Instalar las librerías del requirements.txt
 Lo hacemos desde la terminal con el siguiente comando:
