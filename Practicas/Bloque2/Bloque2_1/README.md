@@ -18,15 +18,15 @@ Dirección de github con al menos el siguiente contenido.
 #### Tamaño del dataset
 5 csv:
 - data_dictionary.csv -> 15 rows x 3 columns
-- order_details.csv -> 48621 rows x 4 columns
-- orders.csv -> 21351 rows x 3 columns
+- order_details.csv -> 48620 rows x 4 columns
+- orders.csv -> 21350 rows x 3 columns
 - pizza_types.csv -> 32 rows x 4 columns
 - pizzas.csv -> 97 rows x 4 columns
 
 #### Contenido del dataset
 - data_dictionary - describes the content of each column of each other csv.
-- order_details - has 48621 rows containing order details regarding pizza type and order quantity.
-- orders - records the datetime indicators of the 21351 orders.
+- order_details - has 48620 rows containing order details regarding pizza type and order quantity.
+- orders - records the datetime indicators of the 21350 orders.
 - pizza_types - specifies the category, ingredients information about the 32 different pizza types offered by the pizza place.
 - pizzas - has 97 rows containing the pricing details of pizza based on the size and pizza type.
 ## Contenido de la carpeta
