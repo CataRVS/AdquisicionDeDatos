@@ -1,0 +1,345 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<root>
+  <infodatasets>
+    <dataset>
+      <dataset_name>order_details</dataset_name>
+      <dataset_column>
+        <column_name>order_details_id</column_name>
+        <Type>int64</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>order_id</column_name>
+        <Type>int64</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>pizza_id</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>5673</Number_of_NaN>
+        <Number_of_Null>5673</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>quantity</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>4726</Number_of_NaN>
+        <Number_of_Null>4726</Number_of_Null>
+      </dataset_column>
+    </dataset>
+    <dataset>
+      <dataset_name>orders</dataset_name>
+      <dataset_column>
+        <column_name>order_id</column_name>
+        <Type>int64</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>date</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>2353</Number_of_NaN>
+        <Number_of_Null>2353</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>time</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>2038</Number_of_NaN>
+        <Number_of_Null>2038</Number_of_Null>
+      </dataset_column>
+    </dataset>
+    <dataset>
+      <dataset_name>pizza_types</dataset_name>
+      <dataset_column>
+        <column_name>pizza_type_id</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>name</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>category</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+      <dataset_column>
+        <column_name>ingredients</column_name>
+        <Type>object</Type>
+        <Number_of_NaN>0</Number_of_NaN>
+        <Number_of_Null>0</Number_of_Null>
+      </dataset_column>
+    </dataset>
+  </infodatasets>
+  <contents>
+    <introduction>En este programa vamos a asumir que acabamos de acabar la semana 51 de 2015 y queremos comprar los ingredientes de la semana que viene, la semana 52.</introduction>
+    <shopping_list>
+      <ingredient>
+        <ingredient_name>Barbecued Chicken</ingredient_name>
+        <ingredient_amount>91</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Red Peppers</ingredient_name>
+        <ingredient_amount>606</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Green Peppers</ingredient_name>
+        <ingredient_amount>190</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Tomatoes</ingredient_name>
+        <ingredient_amount>1006</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Red Onions</ingredient_name>
+        <ingredient_amount>726</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Barbecue Sauce</ingredient_name>
+        <ingredient_amount>91</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Chicken</ingredient_name>
+        <ingredient_amount>328</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Artichoke</ingredient_name>
+        <ingredient_amount>86</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Spinach</ingredient_name>
+        <ingredient_amount>341</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Garlic</ingredient_name>
+        <ingredient_amount>1070</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Jalapeno Peppers</ingredient_name>
+        <ingredient_amount>226</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Fontina Cheese</ingredient_name>
+        <ingredient_amount>118</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Gouda Cheese</ingredient_name>
+        <ingredient_amount>86</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Mushrooms</ingredient_name>
+        <ingredient_amount>322</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Asiago Cheese</ingredient_name>
+        <ingredient_amount>120</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Alfredo Sauce</ingredient_name>
+        <ingredient_amount>33</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Pesto Sauce</ingredient_name>
+        <ingredient_amount>96</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Corn</ingredient_name>
+        <ingredient_amount>136</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Cilantro</ingredient_name>
+        <ingredient_amount>136</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Chipotle Sauce</ingredient_name>
+        <ingredient_amount>136</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Pineapple</ingredient_name>
+        <ingredient_amount>176</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Thai Sweet Chilli Sauce</ingredient_name>
+        <ingredient_amount>96</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Bacon</ingredient_name>
+        <ingredient_amount>108</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Pepperoni</ingredient_name>
+        <ingredient_amount>324</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Italian Sausage</ingredient_name>
+        <ingredient_amount>33</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Chorizo Sausage</ingredient_name>
+        <ingredient_amount>33</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Sliced Ham</ingredient_name>
+        <ingredient_amount>80</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Mozzarella Cheese</ingredient_name>
+        <ingredient_amount>402</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Capocollo</ingredient_name>
+        <ingredient_amount>264</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Goat Cheese</ingredient_name>
+        <ingredient_amount>134</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Oregano</ingredient_name>
+        <ingredient_amount>54</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Anchovies</ingredient_name>
+        <ingredient_amount>50</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Green Olives</ingredient_name>
+        <ingredient_amount>214</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Kalamata Olives</ingredient_name>
+        <ingredient_amount>126</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Feta Cheese</ingredient_name>
+        <ingredient_amount>173</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Beef Chuck Roast</ingredient_name>
+        <ingredient_amount>64</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Brie Carre Cheese</ingredient_name>
+        <ingredient_amount>8</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Prosciutto</ingredient_name>
+        <ingredient_amount>8</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Caramelized Onions</ingredient_name>
+        <ingredient_amount>8</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Pears</ingredient_name>
+        <ingredient_amount>8</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Thyme</ingredient_name>
+        <ingredient_amount>8</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Nduja Salami</ingredient_name>
+        <ingredient_amount>36</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Pancetta</ingredient_name>
+        <ingredient_amount>36</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Friggitello Peppers</ingredient_name>
+        <ingredient_amount>36</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Calabrese Salami</ingredient_name>
+        <ingredient_amount>70</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Genoa Salami</ingredient_name>
+        <ingredient_amount>56</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Prosciutto di San Daniele</ingredient_name>
+        <ingredient_amount>48</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Arugula</ingredient_name>
+        <ingredient_amount>48</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Coarse Sicilian Salami</ingredient_name>
+        <ingredient_amount>62</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Luganega Sausage</ingredient_name>
+        <ingredient_amount>62</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Onions</ingredient_name>
+        <ingredient_amount>62</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Soppressata Salami</ingredient_name>
+        <ingredient_amount>34</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Artichokes</ingredient_name>
+        <ingredient_amount>204</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Peperoncini verdi</ingredient_name>
+        <ingredient_amount>78</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Provolone Cheese</ingredient_name>
+        <ingredient_amount>72</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Smoked Gouda Cheese</ingredient_name>
+        <ingredient_amount>72</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Romano Cheese</ingredient_name>
+        <ingredient_amount>72</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Blue Cheese</ingredient_name>
+        <ingredient_amount>72</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Ricotta Cheese</ingredient_name>
+        <ingredient_amount>86</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Gorgonzola Piccante Cheese</ingredient_name>
+        <ingredient_amount>86</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Parmigiano Reggiano Cheese</ingredient_name>
+        <ingredient_amount>86</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Eggplant</ingredient_name>
+        <ingredient_amount>32</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Zucchini</ingredient_name>
+        <ingredient_amount>85</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Sun-dried Tomatoes</ingredient_name>
+        <ingredient_amount>63</ingredient_amount>
+      </ingredient>
+      <ingredient>
+        <ingredient_name>Plum Tomatoes</ingredient_name>
+        <ingredient_amount>34</ingredient_amount>
+      </ingredient>
+    </shopping_list>
+  </contents>
+</root>
