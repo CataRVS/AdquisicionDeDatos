@@ -53,7 +53,7 @@ signal.signal(signal.SIGINT, handler_signal)
 
 
 if __name__ == '__main__':
-    directorio_repo1 = './skale/skale-manager'
+    directorio_repo1 = './skale-manager'
     main_branch1 = 'develop'
     directorio_repo2 = './django-redis'
     main_branch2 = 'master'
