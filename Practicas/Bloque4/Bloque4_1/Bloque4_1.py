@@ -230,7 +230,7 @@ def ingredientes_mas_menos_usados(pdf: FPDF, ingredientes_usados: pd.DataFrame) 
     pdf.image('ingredientes_usados.png', x = posicion_foto, w =160) # Añadimos la imagen
     # Comentamos la imagen
     pdf.ln(5)
-    pdf.multi_cell(0, 5, 'Como podemos ver, los ingredientes más usados son el ajo (garlic) y el tomate (Tomatoes) con más de 50000 consumiciones en 2016.')
+    pdf.multi_cell(0, 5, 'Como podemos ver, los ingredientes más usados son el ajo (Garlic) y el tomate (Tomatoes) con más de 50000 consumiciones en 2016.')
     pdf.ln()
     pdf.multi_cell(0, 5, 'En cambio, los ingredientes menos usados con Brie Carre Cheese, Prosciutto, Caramelized Onions, Pears, Thyme. Todos ellos con 418 consumiciones. Esto se debe a que solo se usan en la pizza Brie Carre, la menos vendida.')
     return pdf
