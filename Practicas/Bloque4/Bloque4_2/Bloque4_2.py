@@ -123,6 +123,6 @@ if __name__ == '__main__':
     nombres = ['order_details', 'orders', 'pizza_types']
     separadores = [';', ';', ',']
     order_details, orders, pizza_types = Analizar_datos_2016.Extract(nombres, separadores)
-    date_order_details = Analizar_datos_2016.Transform(pizza_types, order_details, orders)
+    date_order_details = Analizar_datos_2016.Transform(order_details, orders)
     ventas_dia_semana, ventas_mes, ventas_hora, ingredientes_usados, ventas_tipos_pizza, ventas_tamanos_pizza = Analizar_datos_2016.Load(pizza_types, date_order_details)
     escribir_excel(ventas_dia_semana, ventas_mes, ventas_hora, ingredientes_usados, ventas_tipos_pizza, ventas_tamanos_pizza)

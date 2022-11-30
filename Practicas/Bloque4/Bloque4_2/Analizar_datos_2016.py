@@ -286,7 +286,7 @@ def Extract(nombres, separadores):
     return dataframes[0], dataframes[1], dataframes[2]
 
 
-def Transform(pizza_types, order_details, orders):
+def Transform(order_details, orders):
     order_details_ordenado, orders_ordenado = ordenar_dataframes(order_details, orders)
     order_details_ordenado['quantity'].fillna(value=1, inplace=True)
     order_details_ordenado['pizza_id'].fillna(value='empty_order_v', inplace=True)
