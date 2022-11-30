@@ -13,6 +13,11 @@ from fpdf import FPDF
 import pandas as pd
 import Analizar_datos_2016
 
+class PDF(FPDF):
+    def footer(self):
+        self.set_y(-15)
+        self.set_font("times", "I", 10)
+        self.cell(0, 10, f"Página {self.page_no()} de {{nb}}", align="R")
 
 
 def crear_tabla(pdf: FPDF, df: pd.DataFrame) -> FPDF:
@@ -28,6 +33,12 @@ def crear_tabla(pdf: FPDF, df: pd.DataFrame) -> FPDF:
     pdf.ln()
     pdf.set_font('times', '', 11)
     for fila in filas:
+        if fila == 45:
+            pdf.set_font('times', 'B', 11)
+            for columna in columnas:
+                pdf.cell(ancho_columna, 5, str(columna), border=True, align='C')
+            pdf.ln()
+            pdf.set_font('times', '', 11)
         for columna in columnas:
             texto = str(df.loc[fila, columna])
             pdf.cell(ancho_columna, 5, texto, border=True, align='C')
@@ -66,13 +77,35 @@ def indice(pdf: FPDF):
     # pdf.multi_cell(0, 5, 'En este informe veremos como han evolucionado las ventas a lo largo del año,' + 
     # ' que día de la semana y el mes se venden más pizzas, y finalmente, que pizzas se venden más y cuales se venden menos.', align='J')
     pdf.set_font('times', '', 16)
-    pdf.cell(0, 10, ' '*10 + '1. Pizzas vendidas por hora.')
+    pdf.cell(150, 10, ' '*10 + '1. Pizzas vendidas por hora.')
+    pdf.set_font('times', 'I', 14)
+    pdf.cell(20, 10, '3 ', align='R')
+    pdf.set_font('times', '', 16)
     pdf.ln()
-    pdf.cell(0, 10, ' '*10 + '2. Pizzas vendidas por día de la semana.')
+    pdf.cell(150, 10, ' '*10 + '2. Pizzas vendidas por día de la semana.')
+    pdf.set_font('times', 'I', 14)
+    pdf.cell(20, 10, '5 ', align='R')
+    pdf.set_font('times', '', 16)
     pdf.ln()
-    pdf.cell(0, 10, ' '*10 + '3. Pizzas vendidas por mes.')
+    pdf.cell(150, 10, ' '*10 + '3. Pizzas vendidas por mes.')
+    pdf.set_font('times', 'I', 14)
+    pdf.cell(20, 10, '6 ', align='R')
+    pdf.set_font('times', '', 16)
     pdf.ln()
-    pdf.cell(0, 10, ' '*10 + '4. Tipos de pizzas más y menos vendidas')
+    pdf.cell(150, 10, ' '*10 + '4. Tipos de pizzas más y menos vendidos')
+    pdf.set_font('times', 'I', 14)
+    pdf.cell(20, 10, '7 ', align='R')
+    pdf.set_font('times', '', 16)
+    pdf.ln()
+    pdf.cell(150, 10, ' '*10 + '5. Tamaños de las pizzas más y menos vendidos')
+    pdf.set_font('times', 'I', 14)
+    pdf.cell(20, 10, '9 ', align='R')
+    pdf.set_font('times', '', 16)
+    pdf.ln()
+    pdf.cell(150, 10, ' '*10 + '6. Ingredientes más y menos usados')
+    pdf.set_font('times', 'I', 14)
+    pdf.cell(20, 10, '10', align='R')
+    pdf.set_font('times', '', 16)
     pdf.ln()
 
     return pdf
@@ -142,7 +175,7 @@ def pizzas_por_mes(pdf: FPDF, ventas_mes: pd.DataFrame,) -> FPDF:
 def pizzas_mas_menos_vendidas(pdf: FPDF, ventas_tipos_pizza: pd.DataFrame) -> FPDF:
     pdf.add_page()
     pdf.set_font('times', 'B', 20)
-    pdf.cell(0, 10, 'Tipos de pizzas más y menos vendidas'.upper(), align='C')
+    pdf.cell(0, 10, 'Tipos de pizzas más y menos vendidos'.upper(), align='C')
     pdf.ln(15)
     pdf.set_font('times', 'U', 12)
     pdf.cell(0, 10, 'Tabla con las ventas por tipo de pizza de 2016.')
@@ -161,8 +194,50 @@ def pizzas_mas_menos_vendidas(pdf: FPDF, ventas_tipos_pizza: pd.DataFrame) -> FP
     return pdf
 
 
-def escribir_pdf(ventas_tipos_pizza: pd.DataFrame, ventas_dia_semana: pd.DataFrame, ventas_mes: pd.DataFrame, ventas_hora: pd.DataFrame):
-    pdf = FPDF('P', 'mm', 'A4')
+def tamanos_mas_menos_vendidos(pdf: FPDF, ventas_tamanos_pizza: pd.DataFrame) -> FPDF:
+    pdf.add_page()
+    pdf.set_font('times', 'B', 20)
+    pdf.cell(0, 10, 'Tamaños de las pizzas más y menos vendidos'.upper(), align='C')
+    pdf.ln(15)
+    pdf.set_font('times', 'U', 12)
+    pdf.cell(0, 10, 'Tabla con las ventas por tamaño de la pizza de 2016.')
+    pdf = crear_tabla(pdf, ventas_tamanos_pizza)
+    pdf.ln(10)
+    pdf.set_font('times', '', 11)
+    ancho_pagina = pdf.w
+    posicion_foto = (ancho_pagina - 170)//2 # Calculamos la posicion de la foto para que quede centrada
+    pdf.image('ventas_por_tamano.png', x = posicion_foto, w =170) # Añadimos la imagen
+    # Comentamos la imagen
+    pdf.ln(5)
+    pdf.multi_cell(0, 5, 'Como podemos ver, los tres tamaños más usados son, en orden, el grande, el mediano y el pequeño, con respectivamente 16727, 13802 y 12701 ventas cada uno.')
+    pdf.ln()
+    pdf.multi_cell(0, 5, 'En este gráfico se puede ver tambien que el tamaño extra grande y extra extra grande no estan muy demandados, especialmente este último con solamente 24 ventas en todo el año. El extra grande como podemos ver tiene 475 ventas.')
+    return pdf
+
+
+def ingredientes_mas_menos_usados(pdf: FPDF, ingredientes_usados: pd.DataFrame) -> FPDF:
+    pdf.add_page()
+    pdf.set_font('times', 'B', 20)
+    pdf.cell(0, 10, 'Ingredientes más y menos usados'.upper(), align='C')
+    pdf.ln(15)
+    pdf.set_font('times', 'U', 12)
+    pdf.cell(0, 10, 'Tabla con las cantidades de ingredientes usados en 2016.')
+    pdf = crear_tabla(pdf, ingredientes_usados)
+    pdf.add_page()
+    pdf.set_font('times', '', 11)
+    ancho_pagina = pdf.w
+    posicion_foto = (ancho_pagina - 160)//2 # Calculamos la posicion de la foto para que quede centrada
+    pdf.image('ingredientes_usados.png', x = posicion_foto, w =160) # Añadimos la imagen
+    # Comentamos la imagen
+    pdf.ln(5)
+    pdf.multi_cell(0, 5, 'Como podemos ver, los ingredientes más usados son el ajo (garlic) y el tomate (Tomatoes) con más de 50000 consumiciones en 2016.')
+    pdf.ln()
+    pdf.multi_cell(0, 5, 'En cambio, los ingredientes menos usados con Brie Carre Cheese, Prosciutto, Caramelized Onions, Pears, Thyme. Todos ellos con 418 consumiciones. Esto se debe a que solo se usan en la pizza Brie Carre, la menos vendida.')
+    return pdf
+
+
+def escribir_pdf(ventas_dia_semana: pd.DataFrame, ventas_mes: pd.DataFrame, ventas_hora: pd.DataFrame, ingredientes_usados: pd.DataFrame, ventas_tipos_pizza: pd.DataFrame, ventas_tamanos_pizza: pd.DataFrame):
+    pdf = PDF('P', 'mm', 'A4')
     pdf.set_margins(30, 25, 25)
     pdf.set_auto_page_break(True, 25)
     pdf = crear_portada(pdf)
@@ -172,6 +247,8 @@ def escribir_pdf(ventas_tipos_pizza: pd.DataFrame, ventas_dia_semana: pd.DataFra
     pdf = pizzas_por_dia_semana(pdf, ventas_dia_semana)
     pdf = pizzas_por_mes(pdf, ventas_mes)
     pdf = pizzas_mas_menos_vendidas(pdf, ventas_tipos_pizza)
+    pdf = tamanos_mas_menos_vendidos(pdf, ventas_tamanos_pizza)
+    pdf = ingredientes_mas_menos_usados(pdf, ingredientes_usados)
 
     pdf.output('Reporte_Ejecutivo_COO.pdf')
 
@@ -181,5 +258,5 @@ if __name__ == '__main__':
     separadores = [';', ';', ',']
     order_details, orders, pizza_types = Analizar_datos_2016.Extract(nombres, separadores)
     date_order_details = Analizar_datos_2016.Transform(order_details, orders)
-    ventas_tipos_pizza, ventas_dia_semana, ventas_mes, ventas_hora = Analizar_datos_2016.Load(pizza_types, date_order_details)
-    escribir_pdf(ventas_tipos_pizza, ventas_dia_semana, ventas_mes, ventas_hora)
+    ventas_dia_semana, ventas_mes, ventas_hora, ingredientes_usados, ventas_tipos_pizza, ventas_tamanos_pizza = Analizar_datos_2016.Load(pizza_types, date_order_details)
+    escribir_pdf(ventas_dia_semana, ventas_mes, ventas_hora, ingredientes_usados, ventas_tipos_pizza, ventas_tamanos_pizza)
