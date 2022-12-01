@@ -6,7 +6,7 @@ Bloque 4.
 Practica 2.
 
 Generar un fichero excel con un reporte ejecutivo, un reporte de ingredientes, un reporte de pedidos
-(uno por cada hoja en el fichero de excel) para el dataset de Maven Pizzas trabajado en el bloque 3
+(uno por cada hoja en el fichero de excel) para el dataset de Maven Pizzas trabajado en el bloque 3.
 '''
 
 import Analizar_datos_2016
@@ -111,7 +111,7 @@ def hoja3(excel: xlsxwriter.Workbook, ventas_tipos_pizza: pd.DataFrame, ventas_t
 
 
 def escribir_excel(ventas_dia_semana, ventas_mes, ventas_hora, ingredientes_usados, ventas_tipos_pizza, ventas_tamanos_pizza):
-    excel = xlsxwriter.Workbook('Reporte_Ejecutivo_COO.xlsx')
+    excel = xlsxwriter.Workbook('Reporte_Mavens_pizza.xlsx')
     excel = hoja1(excel, ventas_hora, ventas_dia_semana, ventas_mes)
     excel = hoja2(excel, ingredientes_usados)
     excel = hoja3(excel, ventas_tipos_pizza, ventas_tamanos_pizza)
