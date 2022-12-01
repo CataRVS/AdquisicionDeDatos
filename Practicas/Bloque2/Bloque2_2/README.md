@@ -23,7 +23,7 @@ Dirección de github con al menos el siguiente contenido.
 ## Contenido de la carpeta
 - fichero python **crear_lista_de_la_compra_2016.py** que contiene el código del programa desarrollado para analizar los datos dados para buscar una predicción adecuada de los ingredientes
   de la semana que viene.
-- fichero de texto **requirements.txt** que contiene las librerias necesarias para la ejecución del fichero Bloque2_1.py
+- fichero de texto **requirements.txt** que contiene las librerias necesarias para la ejecución del fichero crear_lista_de_la_compra_2015.py
 - fichero csv **order_details.csv** que contiene los datos descritos anteriormente
 - fichero csv **orders.csv** que contiene los datos descritos anteriormente
 - fichero csv **pizza_types.csv** que contiene los datos descritos anteriormente
