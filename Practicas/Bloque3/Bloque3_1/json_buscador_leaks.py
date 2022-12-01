@@ -59,7 +59,7 @@ if __name__ == '__main__':
     main_branch2 = 'master'
     lista_commits1 = Extract(directorio_repo1, main_branch1)
     df_commits1 = Transform(lista_commits1)
-    dict_leaks1 = Load(df_commits1, 'skale-manage')
+    dict_leaks1 = Load(df_commits1, 'skale-manager')
 
     lista_commits2 = Extract(directorio_repo2, main_branch2)
     df_commits2 = Transform(lista_commits2)
