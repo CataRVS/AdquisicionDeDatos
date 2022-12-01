@@ -3,10 +3,10 @@
 
 '''
 Bloque 4.
-Practica 1.
+Practica 2.
 
-Generar un reporte ejecutivo para el COO de Maven Pizzas en formato pdf
-(para ello aprovechar el trabajo previo realizado en el bloque 3).
+Generar un fichero excel con un reporte ejecutivo, un reporte de ingredientes, un reporte de pedidos
+(uno por cada hoja en el fichero de excel) para el dataset de Maven Pizzas trabajado en el bloque 3
 '''
 
 import Analizar_datos_2016
