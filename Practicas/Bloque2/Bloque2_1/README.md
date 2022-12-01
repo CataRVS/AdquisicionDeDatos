@@ -30,7 +30,7 @@ Dirección de github con al menos el siguiente contenido.
 - pizza_types - specifies the category, ingredients information about the 32 different pizza types offered by the pizza place.
 - pizzas - has 97 rows containing the pricing details of pizza based on the size and pizza type.
 ## Contenido de la carpeta
-- fichero python **Bloque2_1.py** que contiene el código del programa desarrollado para analizar los datos dados para buscar una predicción adecuada de los ingredientes
+- fichero python **crear_lista_de_la_compra_2015.py** que contiene el código del programa desarrollado para analizar los datos dados para buscar una predicción adecuada de los ingredientes
   de la semana que viene.
 - fichero de texto **requirements.txt** que contiene las librerias necesarias para la ejecución del fichero Bloque2_1.py
 - fichero csv **data_dictionary.csv** que contiene los datos descritos anteriormente
@@ -48,10 +48,10 @@ Lo podemos hacer de dos manera:
 Lo hacemos desde la terminal con el siguiente comando:
 
 `pip install -r requirements.txt`
-#### Ejecutar el fichero de python Bloque2_1.py
+#### Ejecutar el fichero de python crear_lista_de_la_compra_2015.py
 Lo hacemos desde la terminal con el siguiente comando:
 
-`python Bloque2_1.py`
+`python crear_lista_de_la_compra_2015.py`
 #### Predicción en el fichero csv lista_de_la_compra_2015.csv
 La predicción de los ingredientes que hay que comprar se guardará en un nuevo fichero. Este tendrá en la primera columna el nombre del ingrediente que hay que comprar
 y en la segunda columna la cantidad.
