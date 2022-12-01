@@ -40,5 +40,5 @@ Lo hacemos desde la terminal con el siguiente comando:
 Lo hacemos desde la terminal con el siguiente comando:
 
 `python pdf_crear_reporte_ejecutivo.py`
-#### Reporte ejecutivo en el fichero Reporte_Ejecutivo_COO.pdf
+#### Reporte ejecutivo en el documento Reporte_Ejecutivo_COO.pdf
 El reporte ejecutivo contiene datos sobre las horas, los días de la semana y los meses en los que más y menos pizzas se venden, los ingredientes más y menos usados y los tipos y tamaños de pizzas más y menos vendidos.
