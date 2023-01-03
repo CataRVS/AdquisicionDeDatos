@@ -82,6 +82,9 @@ Opcional: (este opcional aportara el 10% sobre la nota final de la práctica)
 Lo hacemos desde la terminal con el siguiente comando:
 
 `pip install -r requirements.txt`
+#### Escribir en el archivo config.txt la key de tu cuenta de la API (es la misma para ambas APIs utilizadas).
+Si no tienes una cuenta, te puedes crear una cuenta gratuita pinchando [aquí](https://dashboard.api-football.com/register)
+
 #### Ejecutar el fichero de python analisis_equipos_NBA.py
 Lo hacemos desde la terminal con el siguiente comando:
 
