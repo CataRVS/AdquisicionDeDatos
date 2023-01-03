@@ -58,7 +58,6 @@ from datetime import datetime, timedelta
 from fpdf import FPDF
 import json
 import matplotlib.pyplot as plt
-import numpy as np
 import os
 import pandas as pd
 import re
