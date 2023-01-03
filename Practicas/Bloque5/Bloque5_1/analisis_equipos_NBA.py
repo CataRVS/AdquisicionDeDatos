@@ -85,12 +85,14 @@ class PDF(FPDF):
 
 
 def Extract_equipos_api():
+    with open('config.txt', 'r') as f:
+        clave = f.read().strip()
     headers1 = {
-    'x-rapidapi-key': '704cc61a2461f125d41165be1bf64ecc',
+    'x-rapidapi-key': clave,
     'x-rapidapi-host': 'v1.basketball.api-sports.io'}
 
     headers2 = {
-    'x-rapidapi-key': '704cc61a2461f125d41165be1bf64ecc',
+    'x-rapidapi-key': clave,
     'x-rapidapi-host': 'v2.nba.api-sports.io'}
 
     parameters1_equipos = {'league': "12", 'season': "2022-2023"}
@@ -270,12 +272,14 @@ def buscar_info_equipo_por_nombre(n_equipo):
 
 
 def Extract_estadisticas_api(equipo_sel, contrincante):
+    with open('config.txt', 'r') as f:
+        clave = f.read().strip()
     headers1 = {
-    'x-rapidapi-key': '704cc61a2461f125d41165be1bf64ecc',
+    'x-rapidapi-key': clave,
     'x-rapidapi-host': 'v1.basketball.api-sports.io'}
 
     headers2 = {
-    'x-rapidapi-key': '704cc61a2461f125d41165be1bf64ecc',
+    'x-rapidapi-key': clave,
     'x-rapidapi-host': 'v2.nba.api-sports.io'}
 
     info_equipo1 = buscar_info_equipo_por_nombre(equipo_sel)
