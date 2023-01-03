@@ -83,12 +83,12 @@ Lo hacemos desde la terminal con el siguiente comando:
 
 `pip install -r requirements.txt`
 #### Escribir en el archivo config.txt la key de tu cuenta de la API (es la misma para las dos APIs utilizadas).
-Si no tienes una cuenta, te puedes crear una cuenta gratuita pinchando [aquí](https://dashboard.api-football.com/register)
+Si no tienes una cuenta, te puedes crear una cuenta gratuita pinchando [aquí](https://dashboard.api-football.com/register).
 
 #### Ejecutar el fichero de python analisis_equipos_NBA.py
 Lo hacemos desde la terminal con el siguiente comando:
 
-`python pdf_crear_reporte_ejecutivo.py`
+`python analisis_equipos_NBA.py`
 
 Durante la ejecución del archivo tendremos que elegir el equipo del que queramos hacer el reporte.
 #### Reporte del equipo en el documento {nombre_equipo}\_{fecha}.pdf
