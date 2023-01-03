@@ -1,0 +1,218 @@
+[
+    {
+        "name": "Minnesota Timberwolves",
+        "code": "MIN",
+        "statistics": {
+            "games": {
+                "played": {
+                    "home": 18,
+                    "away": 23,
+                    "all": 41
+                },
+                "wins": {
+                    "home": {
+                        "total": 9,
+                        "percentage": 0.5
+                    },
+                    "away": {
+                        "total": 11,
+                        "percentage": 0.478
+                    },
+                    "all": {
+                        "total": 20,
+                        "percentage": 0.488
+                    }
+                },
+                "draws": {
+                    "home": {
+                        "total": 0,
+                        "percentage": 0.0
+                    },
+                    "away": {
+                        "total": 0,
+                        "percentage": 0.0
+                    },
+                    "all": {
+                        "total": 0,
+                        "percentage": 0.0
+                    }
+                },
+                "loses": {
+                    "home": {
+                        "total": 9,
+                        "percentage": 0.5
+                    },
+                    "away": {
+                        "total": 12,
+                        "percentage": 0.522
+                    },
+                    "all": {
+                        "total": 21,
+                        "percentage": 0.512
+                    }
+                }
+            },
+            "points": {
+                "for": {
+                    "total": {
+                        "home": 2091,
+                        "away": 2612,
+                        "all": 4703
+                    },
+                    "average": {
+                        "home": 116.2,
+                        "away": 113.6,
+                        "all": 114.7
+                    }
+                },
+                "against": {
+                    "total": {
+                        "home": 2097,
+                        "away": 2627,
+                        "all": 4724
+                    },
+                    "average": {
+                        "home": 116.5,
+                        "away": 114.2,
+                        "all": 115.2
+                    }
+                }
+            },
+            "field goals": {
+                "made": 1740,
+                "attempted": 3577,
+                "percentage": 65.2
+            },
+            "free throws": {
+                "made": 767,
+                "attempted": 997,
+                "percentage": 76.6
+            },
+            "three pointers": {
+                "made": 456,
+                "attempted": 1340,
+                "percentage": 34.1
+            },
+            "rebounds": {
+                "offensive": 362,
+                "defensive": 1397,
+                "total": 1759
+            },
+            "others": {
+                "assists": 1055,
+                "fouls": 903,
+                "steals": 353,
+                "turnovers": 648,
+                "blocks": 216
+            }
+        }
+    },
+    {
+        "name": "Milwaukee Bucks",
+        "code": "MIL",
+        "statistics": {
+            "games": {
+                "played": {
+                    "home": 21,
+                    "away": 19,
+                    "all": 40
+                },
+                "wins": {
+                    "home": {
+                        "total": 15,
+                        "percentage": 0.714
+                    },
+                    "away": {
+                        "total": 8,
+                        "percentage": 0.421
+                    },
+                    "all": {
+                        "total": 23,
+                        "percentage": 0.575
+                    }
+                },
+                "draws": {
+                    "home": {
+                        "total": 0,
+                        "percentage": 0.0
+                    },
+                    "away": {
+                        "total": 0,
+                        "percentage": 0.0
+                    },
+                    "all": {
+                        "total": 0,
+                        "percentage": 0.0
+                    }
+                },
+                "loses": {
+                    "home": {
+                        "total": 6,
+                        "percentage": 0.286
+                    },
+                    "away": {
+                        "total": 11,
+                        "percentage": 0.579
+                    },
+                    "all": {
+                        "total": 17,
+                        "percentage": 0.425
+                    }
+                }
+            },
+            "points": {
+                "for": {
+                    "total": {
+                        "home": 2440,
+                        "away": 2038,
+                        "all": 4478
+                    },
+                    "average": {
+                        "home": 116.2,
+                        "away": 107.3,
+                        "all": 112.0
+                    }
+                },
+                "against": {
+                    "total": {
+                        "home": 2285,
+                        "away": 2164,
+                        "all": 4449
+                    },
+                    "average": {
+                        "home": 108.8,
+                        "away": 113.9,
+                        "all": 111.2
+                    }
+                }
+            },
+            "field goals": {
+                "made": 1620,
+                "attempted": 3563,
+                "percentage": 62.2
+            },
+            "free throws": {
+                "made": 714,
+                "attempted": 965,
+                "percentage": 74.1
+            },
+            "three pointers": {
+                "made": 524,
+                "attempted": 1515,
+                "percentage": 35.0
+            },
+            "rebounds": {
+                "offensive": 487,
+                "defensive": 1448,
+                "total": 1935
+            },
+            "others": {
+                "assists": 964,
+                "fouls": 774,
+                "steals": 270,
+                "turnovers": 637,
+                "blocks": 208
+            }
+        }
+    }
+]

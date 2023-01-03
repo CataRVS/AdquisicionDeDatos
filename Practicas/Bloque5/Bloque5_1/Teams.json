@@ -1,0 +1,182 @@
+[
+    [
+        "Atlanta Hawks",
+        "ATL",
+        132,
+        1
+    ],
+    [
+        "Boston Celtics",
+        "BOS",
+        133,
+        2
+    ],
+    [
+        "Brooklyn Nets",
+        "BKN",
+        134,
+        4
+    ],
+    [
+        "Charlotte Hornets",
+        "CHA",
+        135,
+        5
+    ],
+    [
+        "Chicago Bulls",
+        "CHI",
+        136,
+        6
+    ],
+    [
+        "Cleveland Cavaliers",
+        "CLE",
+        137,
+        7
+    ],
+    [
+        "Dallas Mavericks",
+        "DAL",
+        138,
+        8
+    ],
+    [
+        "Denver Nuggets",
+        "DEN",
+        139,
+        9
+    ],
+    [
+        "Detroit Pistons",
+        "DET",
+        140,
+        10
+    ],
+    [
+        "Golden State Warriors",
+        "GSW",
+        141,
+        11
+    ],
+    [
+        "Houston Rockets",
+        "HOU",
+        142,
+        14
+    ],
+    [
+        "Indiana Pacers",
+        "IND",
+        143,
+        15
+    ],
+    [
+        "L.A. Clippers",
+        "LAC",
+        144,
+        16
+    ],
+    [
+        "L.A. Lakers",
+        "LAL",
+        145,
+        17
+    ],
+    [
+        "Memphis Grizzlies",
+        "MEM",
+        146,
+        19
+    ],
+    [
+        "Miami Heat",
+        "MIA",
+        147,
+        20
+    ],
+    [
+        "Milwaukee Bucks",
+        "MIL",
+        148,
+        21
+    ],
+    [
+        "Minnesota Timberwolves",
+        "MIN",
+        149,
+        22
+    ],
+    [
+        "New Orleans Pelicans",
+        "NOP",
+        150,
+        23
+    ],
+    [
+        "New York Knicks",
+        "NYK",
+        151,
+        24
+    ],
+    [
+        "Oklahoma City Thunder",
+        "OKC",
+        152,
+        25
+    ],
+    [
+        "Orlando Magic",
+        "ORL",
+        153,
+        26
+    ],
+    [
+        "Philadelphia 76ers",
+        "PHI",
+        154,
+        27
+    ],
+    [
+        "Phoenix Suns",
+        "PHX",
+        155,
+        28
+    ],
+    [
+        "Portland Trail Blazers",
+        "POR",
+        156,
+        29
+    ],
+    [
+        "Sacramento Kings",
+        "SAC",
+        157,
+        30
+    ],
+    [
+        "San Antonio Spurs",
+        "SAS",
+        158,
+        31
+    ],
+    [
+        "Toronto Raptors",
+        "TOR",
+        159,
+        38
+    ],
+    [
+        "Utah Jazz",
+        "UTA",
+        160,
+        40
+    ],
+    [
+        "Washington Wizards",
+        "WAS",
+        161,
+        41
+    ]
+]
