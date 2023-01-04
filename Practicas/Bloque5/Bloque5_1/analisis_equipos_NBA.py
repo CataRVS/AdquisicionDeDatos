@@ -216,7 +216,7 @@ def buscar_proximo_partido(doc, jornada, equipo_sel):
             siguiente_jornada = 'jornada' + str(int(jornada.split('a')[-1]) + 1 )
             equipos_sep = equipos_jornada(doc, siguiente_jornada)
             while equipo_sel not in equipos_sep and siguiente_jornada != "jornada164":
-                siguiente_jornada = 'jornada' + str(int(jornada.split('a')[-1]) + 1 )
+                siguiente_jornada = 'jornada' + str(int(siguiente_jornada.split('a')[-1]) + 1 )
                 equipos_sep = equipos_jornada(doc, siguiente_jornada)
             if siguiente_jornada == "jornada164":
                 print('Este equipo ya no va a jugar más partidos en esta temporada de la NBA.')
